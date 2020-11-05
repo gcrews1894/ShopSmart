@@ -23,6 +23,8 @@ if (process.env.NODE_ENV === 'production') {
   app.use('/build', express.static(path.join(__dirname, '../build')));
 }
 
+// app.use('/db', )
+
 app.use('/api', apiRouter);
 
 // test if server is working
